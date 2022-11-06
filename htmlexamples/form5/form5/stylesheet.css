@@ -1,0 +1,48 @@
+body {
+    background-image: url(img/Sfondo_prenota_viaggio.jpg);
+}
+
+.riquadro {
+    width: 800px;
+    height: 1000px;
+    background-color: white;
+    margin: auto;
+    padding: 30px;
+}
+
+.label {
+    float: left;
+    width: 30%;
+}
+
+.inputs {
+    float: right;
+    width: 70%;
+}
+
+.label label {
+    margin-bottom: 30px;
+}
+
+.inputs input {
+    height: 22px;
+    margin-bottom: 30px;
+}
+
+.rosso {
+    color: red;
+}
+
+.invia {
+    color: white;
+    background-color: orange;
+    border: none;
+    border-radius: 10px;
+    margin-left: 15%;
+    width: 10%;
+}
+
+.missing{
+    border:solid !important;
+    border-color:red !important;
+}

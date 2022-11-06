@@ -1,0 +1,52 @@
+body{
+    display:grid;
+    grid-template-columns: 0.5fr 2fr 0.5fr
+}
+
+
+button{
+    width: fit-content;
+}
+
+.lilMargin{
+    margin-top:0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.main{
+    grid-column-start: 2;
+    background-color: yellow;
+    border-style: solid;
+}
+
+.header{
+    background-color:orange;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 24px;
+    display:flex;
+    justify-content:center;
+}
+
+.fieldDiv{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    margin-bottom: 0.5rem;
+}
+
+.inputName{
+    text-align: end;
+    margin-right: 1rem;
+}
+
+.inputDiv > input{
+    margin-bottom: 0.3rem;
+}
+
+.inputDiv > input:last-child{
+    margin-bottom: 0rem;
+}
+

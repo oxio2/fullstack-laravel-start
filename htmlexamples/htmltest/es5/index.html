@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+	<form id="form" onsubmit="return controllo();">
+		<div class="bloccoBianco">
+			<span class="titolo">Prenotazione Hotel</span>
+			<hr/>
+			<div class="sezione">
+				<div class="sezioneNome">
+					<span>Nome</span>
+				</div>
+				<div class="sezioneInputs">
+					<div class="col">
+						<input name="nome" class="required smallInput" type="text">
+						<span>Nome</span>
+					</div>		
+					<div class="col">
+						<input class="required smallInput" type="text">
+						<span>Cognome</span>
+					</div>
+				</div>
+			</div>
+			<div class="sezione">
+				<div class="sezioneNome">
+					<span>Email</span>
+				</div>
+				<div class="sezioneInputs">
+					<div class="col">
+						<input class="required" type="text">
+						<span>esempio@esempio.com</span>
+					</div>
+				</div>
+			</div>
+			<div class="sezione">
+				<div class="sezioneNome">
+					<span>Tipologia Camera</span>
+				</div>
+				<div class="sezioneInputs">
+					<div class="col">
+						<select>
+							<option>Piccola</option>
+							<option>Media</option>
+							<option>Grande</option>
+						</select>
+					</div>		
+				</div>
+			</div>
+			<div class="sezione">
+				<div class="sezioneNome">
+					<span>Numero Ospiti</span>
+				</div>
+				<div class="sezioneInputs">
+					<div class="col">
+						<input class="required" type="number">
+					</div>		
+				</div>
+			</div>
+			<div class="sezione">
+				<div class="sezioneNome">
+					<span>Data & Orario di Arrivo</span>
+				</div>
+				<div class="sezioneInputs">
+					<div class="col">
+						<input class="reuired smallInput" type="date">
+						<span>Data</span>
+					</div>		
+					<div class="col">
+						<input class="required" type="time">
+						<span>Ora</span>
+					</div>
+				</div>
+			</div>
+			<div class="sezione">
+				<div class="sezioneNome">
+					<span>Data di Partenza</span>
+				</div>
+				<div class="sezioneInputs">
+					<div class="col">
+						<input class="required" type="date">
+					</div>		
+				</div>
+			</div>
+			<div class="sezione">
+				<div class="sezioneNome">
+					<span>Servizio Navetta Gratuito</span>
+				</div>
+				<div class="sezioneInputs">
+					<div class="col">
+						<div class="marginBott">
+							<input class="required" name="gratiuto" value="si" type="radio">
+							<span>Si Per Favore! Venitemi a prendere al mio arrivo!</span>
+						</div>
+
+						<div>
+							<input class="required" name="gratiuto" value="no"  type="radio">
+							<span>No Grazie, mi arragio hihihiha</span>
+						</div>
+
+					</div>		
+				</div>
+			</div>
+
+			<div class="sezione">
+				<div class="sezioneNome">
+					<span>Numero volo</span>
+				</div>
+				<div class="sezioneInputs">
+					<div class="col">
+						<input type="number">
+					</div>		
+				</div>
+			</div>
+
+
+			<div class="sezione">
+				<div class="sezioneNome">
+					<span>Numero volo</span>
+				</div>
+				<div class="sezioneInputs">
+					<div class="col">
+						<textarea></textarea>
+					</div>		
+				</div>
+			</div>
+			
+			<button type="submit">Invia</button>
+		</div>
+	</form>
+	
+	<script src="scriptCuoghi.js"></script>
+</body>
+</html>

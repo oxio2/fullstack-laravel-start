@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Prenotazione Hotel</title>
+</head>
+<body>
+    <div class="riquadro">
+        
+        <h3>Prenotazione Hotel</h3><hr><br>
+        
+        <form action="#" id="form">
+            
+            <div class="label">
+                <label>Nome </label><label class="rosso">*</label>
+                <br><br><br><br>
+                <label>E-mail</label><label class="rosso">*</label>
+                <br><br><br><br>
+                <label>Tipologia Camera</label>
+                <br><br><br><br>
+                <label>Numero di ospiti</label><label class="rosso">*</label>
+                <br><br><br><br>
+                <label>Data & Orario di arrivo</label><label class="rosso">*</label>
+                <br><br><br><br>
+                <label>Data di partenza</label><label class="rosso">*</label>
+                <br><br><br><br>
+                <label>Servizio navetta gratuito</label><label class="rosso">*</label>
+                <br><br><br><br><br>
+                <label>Numero del volo</label>
+                <br><br><br><br>
+                <label>Richieste speciali</label>
+            </div>
+            
+            <div class="inputs">
+                <input class="required" name="name" type="text" placeholder="Nome">
+                <input class="required" name="cognome" type="text" placeholder="Cognome"><br>
+                <input class="required" name="email" type="email" placeholder="ex: myname@example.com" style="width: 62.5%"><br><br>
+                <select class="required">
+                    <option value="" selected> SCEGLI </option>
+                    <option value="Grandissima"> Grandissima </option>
+                    <option value="Piccolissima"> Piccolissima </option>
+                </select>
+                <br><br><br><br>
+                <input class="required" name="camera" type="number">
+                <br><br>
+                <input class="required" name="dataArrivo" type="date">
+                <input class="required" name="oraArrivo" type="time">
+                <br><br>
+                <input class="required" name="dataPartenza" type="date">
+                <input class="required" name="oraPartenza" type="time">
+<br>
+                
+                <input class="required" type="radio" name="prendimi" checked>Si per favore! - Venitemi a prendere all'arrivo<br>
+                <input class="required" type="radio" name="prendimi">No grazie - Vengo per conto mio<br>
+                <input class="required" name="nVolo" type="number"><br><br>
+                <textarea class="required" name="richieste"  cols="30" rows="10"></textarea>
+                <br>
+                <input type="submit" value="Invio" class="invia">
+            </div>
+        </form>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
